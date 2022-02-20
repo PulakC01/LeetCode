@@ -18,6 +18,7 @@ class Solution {
                 m.put(a,b);
             }
         }
-        return m.size();
+        int x = m.size();
+        return x;
     }
 }
