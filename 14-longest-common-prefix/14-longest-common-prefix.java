@@ -1,13 +1,11 @@
 class Solution {
     public String longestCommonPrefix(String[] strs) {
         int n = strs.length;
-        ArrayList<Integer> arr = new ArrayList<Integer>();
-        for(int i=0;i<n;i++) {
-            arr.add(strs[i].length());
-        }
-        int l = Collections.min(arr);
+        int minLen = Integer.MAX_VALUE;
+        for (String str : strs)
+            minLen = Math.min(minLen, str.length());
         String prefix = "";
-        for(int i=0;i<l;i++) {
+        for(int i=0;i<minLen;i++) {
             char test = strs[0].charAt(i);
             boolean common = true;
             for(int j=0;j<n;j++) {
