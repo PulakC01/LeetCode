@@ -24,11 +24,8 @@ public:
         }
         string str = "";
         for(int i=0;i<numRows;i++) {
-            for(int j=0;j<arr[i].size();j++) {
-                str=  str + arr[i][j];
-            }
+            str = str + string(arr[i].begin(), arr[i].end());
         }
-         
         return str;
         
     }
