@@ -1,6 +1,6 @@
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
-        List<List<Integer>> res = new ArrayList<>();
+       // List<List<Integer>> res = new ArrayList<>();
         
         HashSet<List<Integer>> set = new HashSet<>();
         Arrays.sort(nums);
@@ -25,6 +25,5 @@ class Solution {
         }
         
         return new ArrayList<>(set);
-        
     }
 }
