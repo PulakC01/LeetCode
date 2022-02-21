@@ -16,7 +16,6 @@ class Solution {
             if(entry.getValue()> n/2)
                 return entry.getKey();
         }
-        return -1;
-        
+        return -1; 
     }
 }
