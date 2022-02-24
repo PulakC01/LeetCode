@@ -11,7 +11,6 @@
 class Solution {
     public ListNode sortList(ListNode head) {
         ListNode temp = head;
-        int res = 0;
         List<Integer> arr = new ArrayList<Integer>();
         while(temp!=null) {
             arr.add(temp.val);
