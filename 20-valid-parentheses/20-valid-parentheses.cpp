@@ -9,13 +9,10 @@ public:
             else {
                 if(t.empty())
                     return false;
-            
                 if(c == ')' && t.top() != '(')
                     return false;
-                
                 if(c == '}' && t.top() != '{')
                     return false;
-                
                 if(c == ']' && t.top() != '[')
                     return false;
                 t.pop();
