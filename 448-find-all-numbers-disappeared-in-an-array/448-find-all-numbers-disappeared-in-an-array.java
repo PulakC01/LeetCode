@@ -11,9 +11,7 @@ class Solution {
     }
      public static boolean check(int[] arr, int toCheckValue) {
         int res = Arrays.binarySearch(arr, toCheckValue);
- 
         boolean test = res > -1 ? true : false;
- 
         return test;
     }
 }
