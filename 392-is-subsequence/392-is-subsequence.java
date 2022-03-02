@@ -1,8 +1,8 @@
 class Solution {
     public boolean isSubsequence(String s, String t) {
         int index = -1;
-        String[] substrings = s.split("");
-        for(String c : substrings) {
+        for(int i=0;i<s.length();i++) {
+            char c = s.charAt(i);
             if(t.indexOf(c, index+1)==-1)
                 return false;
             else {
