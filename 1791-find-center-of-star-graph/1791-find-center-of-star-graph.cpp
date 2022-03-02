@@ -5,7 +5,6 @@ public:
             return edges[0][0];
         else 
             return edges[0][1];
-        
         return 0;
     }
 };
