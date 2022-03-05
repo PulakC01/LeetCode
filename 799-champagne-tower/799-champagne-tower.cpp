@@ -14,8 +14,6 @@ public:
                 }
             }
         }
-        return std::min(1.0, dp[query_row][query_glass]);
-        
-        
+        return std::min(1.0, dp[query_row][query_glass]); 
     }
 };
