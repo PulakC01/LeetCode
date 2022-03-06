@@ -7,13 +7,11 @@ public:
                 digits[i]++;
                 return digits;
             }
-
             digits[i] = 0;
         }
+        vector<int> all9s(n+1);
+        all9s[0] = 1;
 
-        vector<int> newNumber(n+1);
-        newNumber[0] = 1;
-
-        return newNumber;
+        return all9s;
     }
 };
