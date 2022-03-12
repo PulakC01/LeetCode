@@ -38,7 +38,6 @@ public:
             temp = temp->next;
             current = current->next;
         }
-        
         return ans->next;
     }
 };
