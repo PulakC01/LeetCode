@@ -21,3 +21,4 @@ public:
         return t.empty();
     }
 };
+
