@@ -11,16 +11,17 @@ public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
         ListNode* a = headA;
         ListNode* b = headB;
-        vector<ListNode*> v;
-        while(a) {
-            v.push_back(a);
-            a = a->next;
+        if (a == NULL || b == NULL){
+            return NULL;
         }
-        while(b) {
-            if(std::find(v.begin(), v.end(), b) != v.end()) 
-                return b;
-            b = b->next;
+        while (a != b){
+            a = (a == NULL ? headB : a->next);
+            b = (b == NULL ? headA : b->next);
+            
+            if (a == headA && b == headB){
+                return NULL;
+            }
         }
-        return NULL;
+        return a;
     }
 };
