@@ -3,8 +3,6 @@ class Solution {
         s = s.trim();
         String[] arr = s.split("\\s+");
         int n = arr.length;
-        
-        System.out.println(n);
         String ans = "";
         for(int i=n-1;i>=0;i--) {
             if(i==0)
