@@ -12,7 +12,6 @@ class Solution {
                 set.add(s.charAt(i));
             }
         }
-        
         int index = Integer.MAX_VALUE;
         if(map.size()==0)
             return -1;
