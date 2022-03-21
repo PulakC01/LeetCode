@@ -5,11 +5,9 @@ class Solution {
         }
         List<Integer> list = new ArrayList<>();
         int[] arr = new int[26];  
-
         for(int i=0;i<s.length();i++){
             arr[s.charAt(i)-'a'] = i;
         }
-        
         int currentMax = 0;
         int start = 0;
         for(int i=0;i<s.length();i++) {
@@ -20,6 +18,5 @@ class Solution {
             }
         }
         return list;
-        
     }
 }
