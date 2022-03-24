@@ -4,17 +4,13 @@ class Solution {
         int ans = 0;
         int start = 0;
         int end = people.length-1;
-        while(start<=end) {
-            if(start==end) {
-                ans++;
-                break;
-            }
-            if(people[start] + people[end] > limit) {
+        while(start<=end) { 
+            if(people[start] + people[end] <= limit) {
+                start++;
                 end--;
                 ans++;
             }
-            if(people[start] + people[end] <= limit) {
-                start++;
+            else {
                 end--;
                 ans++;
             }
