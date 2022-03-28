@@ -5,9 +5,6 @@ public:
         while(num>1) {
             num = num/4;
         }
-        if(num==1)
-            return true;
-        else
-            return false;
+        return (num==1);
     }
 };
