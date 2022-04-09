@@ -16,7 +16,6 @@ class Solution {
         int ans[] = new int[k];
         for(int i=0;i<k;i++) 
             ans[i] = l.get(i);
-       
         return ans;
     }
 }
