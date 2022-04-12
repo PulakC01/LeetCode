@@ -27,17 +27,17 @@ public:
                     ones++;
                 else if(j+1<m)
                     zeros++;
-                // down right
+                // bottom right
                 if(j+1<m && i+1<n && board[i+1][j+1]==1)
                     ones++;
                 else if(j+1<m && i+1<n) 
                     zeros++;
-                // down
+                // bottom
                 if(i+1<n && board[i+1][j]==1)
                     ones++;
                 else if(i+1<n)
                     zeros++;
-                // down left
+                // bottom left
                 if(i+1<n && j-1>=0 && board[i+1][j-1]==1)
                     ones++;
                 else if(i+1<n && j-1>=0) 
