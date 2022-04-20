@@ -22,7 +22,7 @@ class Solution {
             if(prev==null) {
             }
             else {
-                if((current.val>prev.val && current.val>current.next.val) || (current.val<prev.val &&                                   current.val<current.next.val))
+                if((current.val>prev.val && current.val>current.next.val) || (current.val<prev.val & current.val<current.next.val))
                     arr.add(count);
             }
             count++;
