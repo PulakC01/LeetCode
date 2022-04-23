@@ -6,9 +6,9 @@ public class Codec {
     public static String getCode(int x) {
         StringBuilder sb = new StringBuilder();
         Random random = new Random();
-        for(int i=0;i<x;i++) {
+        for(int i=0;i<x;i++) 
             sb.append(charset.charAt(random.nextInt(charset.length())));
-        }
+        
         return sb.toString();
         
     }
