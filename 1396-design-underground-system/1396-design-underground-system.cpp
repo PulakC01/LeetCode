@@ -14,7 +14,8 @@ public:
     
     void checkOut(int id, string stationName, int t) {
         int timeTaken = t - check_in[id].second;
-        time_avg[{check_in[id].first,stationName}].push_back(timeTaken);
+        string checkInStation = check_in[id].first;
+        time_avg[{checkInStation,stationName}].push_back(timeTaken);
     }
     
     double getAverageTime(string startStation, string endStation) {
