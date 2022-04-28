@@ -6,24 +6,25 @@ class Solution {
         a = fillStack(S);
         b = fillStack(T);
         
-        while (!a.isEmpty() || !b.isEmpty()){
-            if (a.isEmpty() ^ b.isEmpty()){
+        while (!a.isEmpty() || !b.isEmpty()) {
+            if (a.isEmpty() ^ b.isEmpty()) {
                 return false;
-            } else if (a.pop() != b.pop()){
+            } 
+            else if (a.pop() != b.pop()) {
                 return false;
             }
         }
         return true;
     }
     
-    public Stack<Character> fillStack(String s){
+    public Stack<Character> fillStack(String s) {
         Stack<Character> stack = new Stack<>();
-        for (char c: s.toCharArray()){
-            if (c == '#'){
-                if (!stack.isEmpty()){
+        for (char c: s.toCharArray()) {
+            if (c == '#') {
+                if (!stack.isEmpty())
                     stack.pop();
-                }
-            } else {
+            } 
+            else {
                 stack.push(c);
             }
         }
