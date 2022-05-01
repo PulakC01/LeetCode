@@ -17,8 +17,8 @@ class Solution {
                 stack.push(c);
         }
         String res = "";
-        for(char c : stack)
-            res = res+c;
+        while(!stack.isEmpty())
+            res = res + stack.pop();
         return res;
     }
 }
