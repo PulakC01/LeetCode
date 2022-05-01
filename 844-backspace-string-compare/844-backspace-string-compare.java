@@ -2,7 +2,6 @@ class Solution {
     public boolean backspaceCompare(String S, String T) {
         String a = getNewString(S);
         String b = getNewString(T);
-        
         return a.equals(b);
     }
     
