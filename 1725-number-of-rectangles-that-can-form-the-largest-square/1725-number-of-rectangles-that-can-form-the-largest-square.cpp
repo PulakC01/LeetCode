@@ -10,7 +10,7 @@ public:
                 count=1;
             }
             else if(maxLen==sideLen)
-                ++count;
+                count++;
         }
         
         return count;
