@@ -6,17 +6,16 @@ class Solution {
         int count[] = new int[sb.length()];
 
         for(int i =0;i<sb.length();i++) {
-            if(i==0 || sb.charAt(i)!=sb.charAt(i-1)) {
+            if(i==0 || sb.charAt(i)!=sb.charAt(i-1))
                 count[i] =1;
-            }
+    
             else {
                 //when character are equal
                 //increase the count by 1 of previous count as they are same characters
                 count[i] = count[i-1]+1;
 
-                if(count[i]==k){
+                if(count[i]==k) {
                     sb.delete(i-k+1,i+1);
- 
                     i = i-k;
                 }   
             }
