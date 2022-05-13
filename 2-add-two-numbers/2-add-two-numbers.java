@@ -16,11 +16,18 @@ class Solution {
         while(l1!=null || l2!=null || carry!=0) {
             int a1 = 0, a2 = 0;
             if(l1!=null) {
-                a1 = l1.val; l1 = l1.next;
-            } else a1=0;  
+                a1 = l1.val; 
+                l1 = l1.next;
+            }
+            else 
+                a1=0;  
+            
             if(l2!=null) {
-                a2 = l2.val; l2 = l2.next;
-            } else a2=0;
+                a2 = l2.val;
+                l2 = l2.next;
+            } 
+            else 
+                a2=0;
             sum = a1+a2+carry;
             carry = sum/10;
             remainder = sum%10;
