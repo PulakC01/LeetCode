@@ -1,19 +1,18 @@
 class Solution {
     public String maximumTime(String time) {
-        char t[] = time.toCharArray();
-        if(t[0]=='?')
-            t[0] = t[1]=='?'?'2':t[1]>'3'?'1':'2'; 
-            
-        if(t[1]=='?')
-            t[1] = t[0]=='2'?'3':'9';
+        char[] times = time.toCharArray();
+        if(times[0] == '?') 
+            times[0] = times[1] <= '3' || times[1] == '?' ? '2' : '1';
         
-        if(t[3]=='?')
-            t[3] = '5';
+        if(times[1] == '?')
+            times[1] = times[0] == '2' ? '3' : '9';
         
-        if(t[4]=='?')
-            t[4] = '9';
+        if(times[3] == '?') 
+            times[3] = '5';
         
-        return String.valueOf(t);
+        if(times[4] == '?') 
+            times[4] = '9';
         
+        return new String(times);
     }
 }
