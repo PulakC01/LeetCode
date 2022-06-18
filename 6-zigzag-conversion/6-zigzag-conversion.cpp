@@ -5,9 +5,8 @@ public:
             return s;
         }
         vector<vector<char>> arr(numRows);
-        int k = 0,t= numRows-2;
+        int k = 0, t = numRows-2;
         int n = numRows;
-       //ool add = true;
         for(int i=0;i<s.length();i++) {
             if(k<n){
                 arr[k].push_back(s.at(i));
